@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0801496A292760EB0050592A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08014969292760EB0050592A /* main.swift */; };
+		08014973292768DF0050592A /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08014972292768DF0050592A /* Grade.swift */; };
+		0801497629276FA70050592A /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801497529276FA70050592A /* String+.swift */; };
+		0801497F292773BE0050592A /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0801497E292773BE0050592A /* Description.swift */; };
+		08014981292779A90050592A /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08014980292779A90050592A /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		08014966292760EB0050592A /* MyCreditManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyCreditManager; sourceTree = BUILT_PRODUCTS_DIR; };
 		08014969292760EB0050592A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		08014972292768DF0050592A /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		0801497529276FA70050592A /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		0801497E292773BE0050592A /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		08014980292779A90050592A /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,37 @@
 		08014968292760EB0050592A /* MyCreditManager */ = {
 			isa = PBXGroup;
 			children = (
+				0801497B292772C80050592A /* Common */,
 				08014969292760EB0050592A /* main.swift */,
 			);
 			path = MyCreditManager;
+			sourceTree = "<group>";
+		};
+		0801497429276F980050592A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0801497529276FA70050592A /* String+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		08014977292771940050592A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				08014972292768DF0050592A /* Grade.swift */,
+				0801497E292773BE0050592A /* Description.swift */,
+				08014980292779A90050592A /* Student.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0801497B292772C80050592A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				08014977292771940050592A /* Data */,
+				0801497429276F980050592A /* Extension */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0801497F292773BE0050592A /* Description.swift in Sources */,
 				0801496A292760EB0050592A /* main.swift in Sources */,
+				0801497629276FA70050592A /* String+.swift in Sources */,
+				08014981292779A90050592A /* Student.swift in Sources */,
+				08014973292768DF0050592A /* Grade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
