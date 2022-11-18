@@ -20,4 +20,27 @@ extension String {
         }
     }
     
+    func toGrade() -> Grade {
+        switch self {
+        case "A+":
+            return Grade.APlus
+        case "A":
+            return Grade.A
+        case "B+":
+            return Grade.BPlus
+        case "B":
+            return Grade.B
+        case "C+":
+            return Grade.CPlus
+        case "C":
+            return Grade.C
+        case "D+":
+            return Grade.DPlus
+        case "D":
+            return Grade.D
+        default:
+            return Grade.F
+        }
+    }
+    
 }
