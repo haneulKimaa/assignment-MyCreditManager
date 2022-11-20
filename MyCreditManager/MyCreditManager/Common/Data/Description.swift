@@ -6,7 +6,6 @@
 //
 
 struct Description {
-    
     /// input error
     static let inputError = "입력이 잘못되었습니다. 다시 확인해주세요."
     static let studentNameError = "학생을 찾지 못했습니다."

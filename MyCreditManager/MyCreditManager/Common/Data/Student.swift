@@ -4,6 +4,7 @@
 //
 //  Created by 김하늘 on 2022/11/18.
 //
+import Foundation
 
 class StudentInfo {
     var subject: [String: String] {
@@ -23,7 +24,7 @@ class StudentInfo {
             for subject in newSubject {
                 totalGrade += subject.value.toGrade().rawValue
             }
-            return totalGrade/Double(newSubject.count)
+            return floor((totalGrade/Double(newSubject.count))*100)/100
         }
         return nil
     }

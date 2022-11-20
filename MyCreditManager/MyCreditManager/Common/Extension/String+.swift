@@ -6,7 +6,6 @@
 //
 
 extension String {
-    
     func isEnglishOrNumType() -> Bool {
         let pattern = "[a-z0-9A-Z]*"
         let resultRange = self.range(of: pattern, options: .regularExpression)
@@ -40,5 +39,4 @@ extension String {
             return Grade.F
         }
     }
-    
 }
