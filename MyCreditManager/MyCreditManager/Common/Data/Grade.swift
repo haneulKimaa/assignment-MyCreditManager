@@ -5,8 +5,6 @@
 //  Created by 김하늘 on 2022/11/18.
 //
 
-import Foundation
-
 enum Grade: Double {
     case APlus = 4.5
     case A = 4.0

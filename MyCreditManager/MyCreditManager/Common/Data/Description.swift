@@ -5,8 +5,6 @@
 //  Created by 김하늘 on 2022/11/18.
 //
 
-import Foundation
-
 struct Description {
     
     /// input error
@@ -28,7 +26,6 @@ struct Description {
     /// 학생 삭제
     static let removeStudent = "삭제할 학생의 이름을 입력해주세요."
     static let removeStudentSuccess = "학생을 삭제하였습니다."
-    static let removeStudentError = studentNameError
     
     /// 성적 추가
     static let addGrade = """
@@ -42,11 +39,9 @@ struct Description {
     성적을 삭제할 학생의 이름, 과목 이름을 띄어쓰기로 구분하여 차례로 작성해주세요.
     입력예) Mickey Swift
     """
-    static let removeGradeError = studentNameError
     
     /// 평점 보기
     static let getGrade = "평점을 알고싶은 학생의 이름을 입력해주세요."
-    static let getGradeError = studentNameError
     
     /// 종료
     static let exitProgram = "프로그램을 종료합니다..."
