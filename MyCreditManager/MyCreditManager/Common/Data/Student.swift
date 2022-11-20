@@ -7,9 +7,7 @@
 
 import Foundation
 
-class Student {
-    
-    var name: String
+class StudentInfo {
     var subject: [String: String] {
         willSet {
             totalGrade = getTotalGrade(newSubject: newValue)
@@ -17,8 +15,7 @@ class Student {
     }
     var totalGrade: Double?
     
-    init(name: String, subject: [String : String]) {
-        self.name = name
+    init(subject: [String : String]) {
         self.subject = subject
     }
 
