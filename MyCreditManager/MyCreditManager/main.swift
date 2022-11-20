@@ -7,20 +7,22 @@
 
 import Foundation
 
+var studentList: [String : StudentInfo] = [:]
+
 private func getMenu() {
     print(Description.inputMenu)
     let readline = readLine()!
     switch readline {
     case "1":
-        addStudent(readline)
+        addStudent()
     case "2":
-        removeStudent(readline)
+        removeStudent()
     case "3":
-        removeStudent(readline)
+        addGrade()
     case "4":
-        addStudent(readline)
+        removeGrade()
     case "5":
-        removeStudent(readline)
+        getGrade()
     case "X":
         endProgram()
     default:
@@ -29,23 +31,23 @@ private func getMenu() {
     }
 }
 
-private func addStudent(_: String) {
+private func addStudent() {
     
 }
 
-private func removeStudent(_: String) {
+private func removeStudent() {
     
 }
 
-private func addGrade(_: String) {
+private func addGrade() {
     
 }
 
-private func removeGrade(_: String) {
+private func removeGrade() {
     
 }
 
-private func getGrade(_: String) {
+private func getGrade() {
     
 }
 
